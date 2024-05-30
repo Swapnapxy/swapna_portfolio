@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2017/01/31/23/42/animal-2028258_640.png"  sizes="16x16 32x32">
+    <title>Swapna</title>
+</head>
+<body>
+    <div class="head-container">
+        <div class="head-title">
+            <h1>Swapna</h1>
+        </div>
+        <div class="head-items">
+            <ul>
+                <li><a href="#home1">Home</a></li>
+                <li><a href="#about1">About</a></li>
+                <li><a href="#services1">Services</a></li>
+                <li><a href="#skills1">Skills</a></li>
+                <li><a href="#contact1">Contact</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+ <section id="home1">
+    <div class="home">
+        <div class="home-image">
+            <img src="image.jpg"/>
+        </div>
+        <div class="home-content">
+            <div class="name">
+            <h1>i'm</h1>
+            <h2>Swapna</h2>
+        </div>
+            <h3>Front-End Developer</h3>
+        </div>
+    
+    </div>
+</section> 
+<section id="about1">
+    <div class="About">
+        <div class="about-content">
+            <h1>About</h1>
+            <p>Hi there! I'm <b>Swapna</b>, a passionate front-end developer with a knack for crafting immersive digital experiences that captivate and delight users. With a background in <b>Computer Science Engineering</b> Graduate, I've honed my skills in <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b> to create pixel-perfect designs and seamless interactions.</p>
+            <p>In my work, I prioritize <b>clean</b>, <b>efficient code</b> and <b>user-centric</b> design principles. I believe that <b>every line of code</b> should serve a purpose and contribute to a seamless <b>user experience</b>. I'm passionate about accessibility and strive to ensure that my creations are <b>inclusive</b> and <b>usable</b> by all.</p>
+        </div>
+
+    </div>
+</section>
+<section id="services1">
+    <div class="Services" >
+
+        <div class="Services-offered">
+            <h1>Services</h1>
+            <button class="accordion"><b>Front-End Development</b>:</button>
+            <div class="panel">
+              <p>Create visually stunning and interactive user interfaces using HTML, CSS, and JavaScript.</p>
+            </div>
+            
+            <button class="accordion"><b>Custom Web Applications</b>:</button>
+            <div class="panel">
+              <p>Develop scalable and intuitive web applications tailored to your business processes and requirements.</p>
+            </div>
+            
+            <button class="accordion"><b>Search Engine Optimization (SEO)</b>:</button>
+            <div class="panel">
+              <p>Optimize your website for search engines to improve visibility, rankings, and organic traffic.</p>
+            </div>
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+                
+                for (i = 0; i < acc.length; i++) {
+                  acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                    } else {
+                      panel.style.display = "block";
+                    }
+                  });
+                }
+                </script>
+        </div>
+
+    </div>
+</section>
+<section id="skills1">
+    <div class="skills">
+        <div class="skills-container">
+        <div class="skill-title">
+            <h1  style="color: blueviolet;">Skills</h1>
+    </div>
+        
+
+        <div class="skills-box">
+             
+            <i class="fa-solid fa-window-maximize" style="color:blueviolet"></i>
+            <h1>Frontend</h1>
+            <h1>Language</h1>
+            
+                <p>Html</p>
+                <p>Css</p>
+                <p>Java Script</p>
+             </div>
+        <div class="skills-box">
+            <i class="fa-solid fa-desktop" style="color:blueviolet"></i>
+            <h1>Backend</h1>
+            <h1>Language</h1>
+            <p>Java</p>
+            
+        </div>
+    </div>
+    </div>
+</section>
+<section id="contact1">
+    <div class="contact-container">
+        <div class="contact-content">
+         <h1>Contact Me!</h1>
+         <h2>Got a problem to solve?</h2>
+         <p>Get your space suit ready and tell me your ideas to develop your dream website.</p>
+        </div>
+        <div class="contact-form">
+            <div><label>NAME</label></div>
+            <input type="text" placeholder="Enter Your Name" style="font-size: 20px;"/>
+            <div><label>EMAIL</label></div>
+            <input type="text" placeholder="Enter Your Email" style="font-size: 20px;"/>
+           <div class="submit-container">
+            <i class="fa-solid fa-envelope"></i>
+            <p>swapnabhairi10@gmail.com</p>
+           <button id="btn1">Submit</button>
+        </div>
+
+        </div>
+
+    </div>
+</section>
+    <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        
+
+
+    </div>
+</body>
+</html>
